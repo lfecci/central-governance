@@ -1,0 +1,13 @@
+name: Mandatory Corporate Check
+
+on:
+  workflow_call: # This is the "secret sauce" that makes it reusable
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Audit
+        run: |
+          echo "Running mandatory security audit..."
+          echo "This logic is centrally managed and cannot be edited by developers."
